@@ -80,5 +80,8 @@
     <ClInclude Include="GaiaEngine\Core\Geodetic2D.h">
       <Filter>GaiaEngine\Core</Filter>
     </ClInclude>
+    <ClInclude Include="GaiaEngine\Core\Geodetic3D.h">
+      <Filter>GaiaEngine\Core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -166,6 +166,7 @@
     <ClInclude Include="..\..\Common\MathHelper.h" />
     <ClInclude Include="..\..\Common\UploadBuffer.h" />
     <ClInclude Include="GaiaEngine\Core\Geodetic2D.h" />
+    <ClInclude Include="GaiaEngine\Core\Geodetic3D.h" />
     <ClInclude Include="GaiaEngine\Core\Trig.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
