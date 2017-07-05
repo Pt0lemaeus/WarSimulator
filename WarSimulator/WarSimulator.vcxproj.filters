@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="GaiaEngine">
+      <UniqueIdentifier>{e9d01ba3-3548-4a23-9b00-14aa66980982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GaiaEngine\Core">
+      <UniqueIdentifier>{c87b075d-19b1-406b-915f-b93ebd061906}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BoxApp.cpp">
@@ -38,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Common\MathHelper.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GaiaEngine\Core\Trig.cpp">
+      <Filter>GaiaEngine\Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Common\UploadBuffer.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GaiaEngine\Core\Trig.h">
+      <Filter>GaiaEngine\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

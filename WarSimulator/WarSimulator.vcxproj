@@ -154,6 +154,7 @@
     <ClCompile Include="..\..\Common\GeometryGenerator.cpp" />
     <ClCompile Include="..\..\Common\MathHelper.cpp" />
     <ClCompile Include="BoxApp.cpp" />
+    <ClCompile Include="GaiaEngine\Core\Trig.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Common\Camera.h" />
@@ -165,6 +166,7 @@
     <ClInclude Include="..\..\Common\GeometryGenerator.h" />
     <ClInclude Include="..\..\Common\MathHelper.h" />
     <ClInclude Include="..\..\Common\UploadBuffer.h" />
+    <ClInclude Include="GaiaEngine\Core\Trig.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
