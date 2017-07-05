@@ -4,7 +4,7 @@
 #include <DirectXPackedVector.h>
 #include "../../../../Common/MathHelper.h"
 
-namespace GaiaEngine_Core{
+namespace GaiaEngine::Core{
     const double OneOverPi = 1.0 / MathHelper::Pi;
     const double PiOverTwo = MathHelper::Pi * 0.5;
     const double PiOverThree = MathHelper::Pi / 3.0;
