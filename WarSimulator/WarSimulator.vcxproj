@@ -154,6 +154,7 @@
     <ClCompile Include="..\..\Common\GeometryGenerator.cpp" />
     <ClCompile Include="..\..\Common\MathHelper.cpp" />
     <ClCompile Include="BoxApp.cpp" />
+    <ClCompile Include="GaiaEngine\Core\Vectors\Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Common\Camera.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="GaiaEngine\Core\Geodetic2D.h" />
     <ClInclude Include="GaiaEngine\Core\Geodetic3D.h" />
     <ClInclude Include="GaiaEngine\Core\Trig.h" />
+    <ClInclude Include="GaiaEngine\Core\Vectors\Vector3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

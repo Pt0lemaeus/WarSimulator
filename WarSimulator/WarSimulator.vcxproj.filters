@@ -19,6 +19,9 @@
     <Filter Include="GaiaEngine\Core">
       <UniqueIdentifier>{c87b075d-19b1-406b-915f-b93ebd061906}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GaiaEngine\Core\Vectors">
+      <UniqueIdentifier>{0daf05ad-384c-4168-8726-194248579443}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BoxApp.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Common\MathHelper.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GaiaEngine\Core\Vectors\Vector3D.cpp">
+      <Filter>GaiaEngine\Core\Vectors</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="GaiaEngine\Core\Geodetic3D.h">
       <Filter>GaiaEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GaiaEngine\Core\Vectors\Vector3D.h">
+      <Filter>GaiaEngine\Core\Vectors</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
