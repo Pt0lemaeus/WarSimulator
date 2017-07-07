@@ -168,6 +168,7 @@
     <ClInclude Include="..\..\Common\UploadBuffer.h" />
     <ClInclude Include="GaiaEngine\Core\Geodetic2D.h" />
     <ClInclude Include="GaiaEngine\Core\Geodetic3D.h" />
+    <ClInclude Include="GaiaEngine\Core\Geometry\Ellipsoid.h" />
     <ClInclude Include="GaiaEngine\Core\Trig.h" />
     <ClInclude Include="GaiaEngine\Core\Vectors\Vector3D.h" />
   </ItemGroup>
