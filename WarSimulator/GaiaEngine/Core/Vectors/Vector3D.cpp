@@ -13,6 +13,14 @@ namespace GaiaEngine::Core {
         return *this / sqrt(x_ * x_ + y_ * y_ + z_ * z_);
     }
 
+    Vector3D& Vector3D::operator=(const Vector3D &rhs)
+    {
+        x_ = rhs.x_;
+        y_ = rhs.y_;
+        z_ = rhs.z_;
+        return *this;
+    }
+
     Vector3D& Vector3D::operator+=(const Vector3D &rhs)
     {
         x_ += rhs.x_;
