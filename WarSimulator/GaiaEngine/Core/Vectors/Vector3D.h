@@ -6,6 +6,7 @@ namespace GaiaEngine::Core {
         double y_;
         double z_;
 
+        Vector3D() = default;
         Vector3D(double, double, double);
         Vector3D Normalize(void);
         Vector3D &operator= (const Vector3D&);

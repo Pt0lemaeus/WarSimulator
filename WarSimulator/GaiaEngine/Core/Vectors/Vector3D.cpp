@@ -1,11 +1,10 @@
 #include "Vector3D.h"
 #include <cmath>
 namespace GaiaEngine::Core {
-    Vector3D::Vector3D(double x, double y, double z)
+
+
+    Vector3D::Vector3D(double x, double y, double z):x_(x),y_(y),z_(z)
     {
-        x_ = x;
-        y_ = y;
-        z_ = z;
     }
 
     Vector3D Vector3D::Normalize()
