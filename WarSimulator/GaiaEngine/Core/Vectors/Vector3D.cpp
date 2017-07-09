@@ -56,6 +56,11 @@ namespace GaiaEngine::Core {
         return x_ * other.x_ + y_ * other.y_ + z_ * other.z_;
     }
 
+    Vector3D& Vector3D::MultiplyComponents(const Vector3D& scale)
+    {
+        return  Vector3D(x_ * scale.x_, y_ * scale.y_, z_ * scale.z_);
+    }
+
     Vector3D operator+(const Vector3D &lhs, const Vector3D &rhs)
     {
         Vector3D sum = lhs;

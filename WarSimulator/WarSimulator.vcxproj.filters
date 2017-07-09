@@ -54,6 +54,9 @@
     <ClCompile Include="GaiaEngine\Core\Vectors\Vector3D.cpp">
       <Filter>GaiaEngine\Core\Vectors</Filter>
     </ClCompile>
+    <ClCompile Include="GaiaEngine\Core\Geometry\Ellipsoid.cpp">
+      <Filter>GaiaEngine\Core\Geometry</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Common\Camera.h">
