@@ -1,4 +1,5 @@
 #include "Ellipsoid.h"
+#include <cmath>
 
 namespace GaiaEngine::Core {
     Ellipsoid::Ellipsoid(Vector3D radii)
@@ -31,5 +32,27 @@ namespace GaiaEngine::Core {
     Vector3D Ellipsoid::GeodeticSurfaceNormal(Vector3D positionOnEllipsoid)
     {
         return (positionOnEllipsoid.MultiplyComponents(oneOverRadiiSquared_)).Normalize();
+    }
+
+    Vector3D Ellipsoid::GeodeticSurfaceNormal(Geodetic3D geodetic)
+    {
+        double cosLatitude = cos(geodetic.latitude_);
+        return Vector3D(
+            cosLatitude*cos(geodetic.longitude_),
+            cosLatitude*sin(geodetic.longitude_),
+            sin(geodetic.latitude_));
+    }
+
+    Vector3D Ellipsoid::ToVector3D(Geodetic3D geodetic)
+    {
+        Vector3D n = GeodeticSurfaceNormal(geodetic);
+        Vector3D k = radiiSquared_.MultiplyComponents(n);
+        double gamma = sqrt(
+            k.x_ * n.x_ +
+            k.y_ * n.y_ +
+            k.z_ * n.z_);
+
+        Vector3D rSurface = k / gamma;
+        return rSurface + (geodetic.height_ * n);
     }
 }

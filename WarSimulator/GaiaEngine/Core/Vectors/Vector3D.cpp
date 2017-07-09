@@ -44,7 +44,7 @@ namespace GaiaEngine::Core {
         return *this;
     }
 
-    Vector3D& Vector3D::Cross(Vector3D &other)
+    Vector3D Vector3D::Cross(const Vector3D &other)
     {
         return  Vector3D(y_ * other.z_ - z_ * other.y_,
             z_ * other.x_ - x_ * other.z_,
@@ -56,7 +56,7 @@ namespace GaiaEngine::Core {
         return x_ * other.x_ + y_ * other.y_ + z_ * other.z_;
     }
 
-    Vector3D& Vector3D::MultiplyComponents(const Vector3D& scale)
+    Vector3D Vector3D::MultiplyComponents(const Vector3D& scale)
     {
         return  Vector3D(x_ * scale.x_, y_ * scale.y_, z_ * scale.z_);
     }
@@ -80,5 +80,15 @@ namespace GaiaEngine::Core {
         Vector3D quotient = lhs;
         quotient /= rhs;
         return quotient;
+    }
+
+    Vector3D operator*(const Vector3D &lhs, double rhs)
+    {
+        return Vector3D(lhs.x_ * rhs, lhs.y_ * rhs, lhs.z_ * rhs);
+    }
+
+    Vector3D operator*( double lhs, const Vector3D &rhs)
+    {
+        return operator*(rhs, lhs);
     }
 }

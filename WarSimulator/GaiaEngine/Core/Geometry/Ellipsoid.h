@@ -1,5 +1,6 @@
 #pragma once
 #include "../Vectors/Vector3D.h"
+#include "../Geodetic3D.h"
 #include <stdexcept>
 
 namespace GaiaEngine::Core {
@@ -8,6 +9,8 @@ namespace GaiaEngine::Core {
         Ellipsoid(Vector3D);
         Ellipsoid(double, double, double);
         Vector3D GeodeticSurfaceNormal(Vector3D);
+        Vector3D GeodeticSurfaceNormal(Geodetic3D);
+        Vector3D ToVector3D(Geodetic3D);
 
         Vector3D radii_;
         Vector3D radiiSquared_;
