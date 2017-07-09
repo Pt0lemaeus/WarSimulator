@@ -58,11 +58,11 @@ namespace GaiaEngine::Core {
         return rSurface + (geodetic.height_ * n);
     }
 
-    Vector3D Ellipsoid::GeodeticSurfaceNormal(Vector3D p)
-    {
-        Vector3D normal = p.MultiplyComponents(oneOverRadiiSquared_);
-        return normal.Normalize();
-    }
+    //Vector3D Ellipsoid::GeodeticSurfaceNormal(Vector3D p)
+    //{
+    //    Vector3D normal = p.MultiplyComponents(oneOverRadiiSquared_);
+    //    return normal.Normalize();
+    //}
 
     //Converting surface points from WGS84 to geographic
     Geodetic2D Ellipsoid::ToGeodetic2D(Vector3D p)
@@ -144,7 +144,7 @@ namespace GaiaEngine::Core {
     {
         Vector3D p = ScaleToGeodeticSurface(position);
         Vector3D h = position - p;
-        double height = MathHelper::sgn((h.Dot(position))) * h.Magnitude;
+        double height = MathHelper::sgn((h.Dot(position))) * h.Magnitude();
         return  Geodetic3D(ToGeodetic2D(p), height);
     }
 

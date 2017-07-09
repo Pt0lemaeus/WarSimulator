@@ -85,7 +85,7 @@ namespace GaiaEngine::Core {
         double cosTheta = cos(theta);
         double sinTheta = sin(theta);
 
-        double ms = axis.MagnitudeSquared;
+        double ms = axis.MagnitudeSquared();
         double m = sqrt(ms);
 
         return Vector3D(

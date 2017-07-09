@@ -57,6 +57,12 @@
     <ClCompile Include="GaiaEngine\Core\Geometry\Ellipsoid.cpp">
       <Filter>GaiaEngine\Core\Geometry</Filter>
     </ClCompile>
+    <ClCompile Include="GaiaEngine\Core\Geodetic2D.cpp">
+      <Filter>GaiaEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GaiaEngine\Core\Geodetic3D.cpp">
+      <Filter>GaiaEngine\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Common\Camera.h">

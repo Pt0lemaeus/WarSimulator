@@ -156,6 +156,8 @@
     <ClCompile Include="..\..\Common\GeometryGenerator.cpp" />
     <ClCompile Include="..\..\Common\MathHelper.cpp" />
     <ClCompile Include="BoxApp.cpp" />
+    <ClCompile Include="GaiaEngine\Core\Geodetic2D.cpp" />
+    <ClCompile Include="GaiaEngine\Core\Geodetic3D.cpp" />
     <ClCompile Include="GaiaEngine\Core\Geometry\Ellipsoid.cpp" />
     <ClCompile Include="GaiaEngine\Core\Vectors\Vector3D.cpp" />
   </ItemGroup>

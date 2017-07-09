@@ -13,7 +13,7 @@ namespace GaiaEngine::Core {
         Vector3D GeodeticSurfaceNormal(Vector3D);
         Vector3D GeodeticSurfaceNormal(Geodetic3D); 
         Vector3D ToVector3D(Geodetic3D); //Converting from geographic to WGS84 
-        Vector3D GeodeticSurfaceNormal(Vector3D);
+        //Vector3D GeodeticSurfaceNormal(Vector3D);
         Geodetic2D ToGeodetic2D(Vector3D); //Converting surface points from WGS84 to geographic
         Vector3D ScaleToGeocentricSurface(Vector3D); //Scaling a point to the surface along the geocentric surface normal
         Vector3D ScaleToGeodeticSurface(Vector3D); //Scaling a point to the surface along the geodetic surface normal
